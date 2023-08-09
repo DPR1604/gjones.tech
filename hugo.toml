@@ -1,0 +1,4 @@
+baseURL = 'http://gjones.tech'
+languageCode = 'en-uk'
+title = 'Gareth Jones'
+theme = 'ananke'
