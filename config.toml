@@ -2,3 +2,13 @@ baseURL = 'http://gjones.tech'
 languageCode = 'en-uk'
 title = 'Gareth Jones'
 theme = 'terminal'
+paginate = 5
+
+[params]
+themeColor = "green"
+showMenuItems = 2
+showLanguageSelector = false
+fullWidthTheme = false
+centerTheme = true
+autoCover = true
+showLastUpdated = false
