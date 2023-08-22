@@ -1,0 +1,29 @@
+---
+
+image: alpine
+
+variables:
+  PROD_PATH: "/var/www/vhosts/gjonestech/public_html/dev/public"
+  DEV_PATH: "/var/www/vhosts/gjonestech/public_html/dev/public"
+  DOCKER_TLS_CERTDIR: "/certs"
+
+stages:
+  - test
+  - dev-deploy
+  - prod-deploy
+
+before_script:
+  - apk add openssh-client
+  - eval $(ssh-agent -s)
+  - echo "$SSH_PRIVATE_KEY" |tr -d '\r' | ssh-add -
+
+test:
+  image: klakegg/hugo:ext-alpine
+  stage: test
+  script:
+    - hugo
+
+dev-deploy:
+  stage: dev-deploy
+  script:
+    - ssh $SSH_USERNAME@$HOSTNAME 'cd $DEV_PATH; git pull; hugo'
