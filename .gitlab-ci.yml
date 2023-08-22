@@ -3,8 +3,8 @@
 image: alpine
 
 variables:
-  PROD_PATH: "/var/www/vhosts/gjonestech/public_html/dev/public"
-  DEV_PATH: "/var/www/vhosts/gjonestech/public_html/dev/public"
+  PROD_PATH: "/var/www/vhosts/gjonestech/public_html/dev/"
+  DEV_PATH: "/var/www/vhosts/gjonestech/public_html/dev/"
   DOCKER_TLS_CERTDIR: "/certs"
 
 stages:
