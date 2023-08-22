@@ -18,7 +18,7 @@ before_script:
   - echo "$SSH_PRIVATE_KEY" |tr -d '\r' | ssh-add -
 
 test:
-  image: klakegg/hugo:ext-alpine
+  image: registry.gitlab.com/pages/hugo/hugo_extended:latest
   stage: test
   script:
     - hugo
