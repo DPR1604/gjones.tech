@@ -10,7 +10,7 @@ variables:
 stages:
   - test
   - dev-deploy
-  - prod-deploy
+#  - prod-deploy
 
 before_script:
   - apk add openssh-client
