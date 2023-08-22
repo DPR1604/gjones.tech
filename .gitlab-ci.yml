@@ -26,4 +26,4 @@ test:
 dev-deploy:
   stage: dev-deploy
   script:
-    - ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$HOSTNAME 'git -C $DEV_PATH pull && hugo --source $DEV_PATH'
+    - ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$HOSTNAME "git -C $DEV_PATH pull && hugo --source $DEV_PATH"
