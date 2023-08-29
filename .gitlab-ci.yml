@@ -1,29 +1,55 @@
 ---
 
-image: alpine
+image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 variables:
-  PROD_PATH: "/var/www/vhosts/gjonestech/public_html/dev/"
-  DEV_PATH: "/var/www/vhosts/gjonestech/public_html/dev/"
   DOCKER_TLS_CERTDIR: "/certs"
-
+  SSH_COMMAND: "ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$HOSTNAME"
 stages:
   - test
-  - dev-deploy
-#  - prod-deploy
+  - deploy
 
 before_script:
-  - apk add openssh-client
+  - apk add openssh-client rsync
   - eval $(ssh-agent -s)
   - echo "$SSH_PRIVATE_KEY" |tr -d '\r' | ssh-add -
 
-test:
-  image: registry.gitlab.com/pages/hugo/hugo_extended:latest
+.test:
   stage: test
   script:
+    - if [ "$UPDATE_THEME" = true ]; then git submodule update --init; fi
     - hugo
 
-dev-deploy:
-  stage: dev-deploy
+.deploy-site:
+  stage: deploy
   script:
-    - ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$HOSTNAME "git -C $DEV_PATH pull && hugo --source $DEV_PATH"
+    - if [ "$UPDATE_THEME" = true ]; then git submodule update --init; fi
+    - hugo
+    - rsync -e "ssh -o StrictHostKeyChecking=no" -crtvz --delete ./public/ $SSH_USERNAME@$HOSTNAME:$SITE_PATH
+
+test:
+  environment:
+    name: Development
+  rules:
+    - if: $CI_COMMIT_BRANCH == "$CI_DEFAULT_BRANCH"
+      when: never
+    - when: always
+  extends: .test
+  
+dev-deploy-site:
+  environment:
+    name: Development
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: never
+    - when: on_success
+  extends: .deploy-site
+
+prod-deploy-site:
+  environment:
+    name: Production
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      when: always
+    - when: never
+  extends: .deploy-site
