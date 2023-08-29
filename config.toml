@@ -19,7 +19,7 @@ copyright = "Copyright Gareth Jones 2023"
 
 #Misc global settings
 enableRobotsTXT = true
-enabledGitInfo = false
+enabledGitInfo = true
 enableEmoji = true
 
 # ignore some build errors
@@ -32,7 +32,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [params]
 defaultTheme = "auto"
-#gitRepo = ""
+gitRepo = "https://gitlab.valhallaonline.info/publicgroup/public-websites/gjones.tech.git"
 fingerprint = ""
 title = "Gareth Jones"
 description = "A DevOps and self-hosting focused blog"
