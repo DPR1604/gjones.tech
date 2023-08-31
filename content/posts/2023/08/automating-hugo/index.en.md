@@ -3,7 +3,7 @@ title: "Automating Hugo"
 subtitle: "How I've automated the deployment of hugo and set up my environments"
 date: 2023-08-30T12:57:55Z
 lastmod: 2023-08-30T12:57:55Z
-draft: true
+draft: false
 authors: []
 description: ""
 tags: ["self-hosting", "hugo", "automation"]
