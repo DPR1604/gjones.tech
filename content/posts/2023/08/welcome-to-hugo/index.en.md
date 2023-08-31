@@ -7,6 +7,7 @@ draft: false
 author: "Gareth Jones"
 tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
+series: ["Hugo"]
 resources:
 - name: "featured-image"
   src: "featured-image.png"

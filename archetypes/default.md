@@ -1,16 +1,15 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
-description: ""
+title: "{{ replace .ContentBaseName "-" " " | title }}"
+subtitle: ""
 date: {{ .Date }}
 lastmod: {{ .Date }}
-draft: false
-author: ""
-tags: [""]
-categories: [""]
+draft: true
+authors: []
+description: ""
+tags: []
+categories: []
+series: []
 resources:
 - name: "featured-image"
-  src: "featured-image.jpg"
-code:
-  copy: true
-  maxShownLines: 50
+  src: "featured-image.png"
 ---

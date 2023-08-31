@@ -4,7 +4,7 @@ image: registry.gitlab.com/pages/hugo/hugo_extended:latest
 
 variables:
   DOCKER_TLS_CERTDIR: "/certs"
-  SSH_COMMAND: "ssh -o StrictHostKeyChecking=no $SSH_USERNAME@$HOSTNAME"
+
 stages:
   - test
   - deploy
@@ -18,13 +18,13 @@ before_script:
   stage: test
   script:
     - if [ "$UPDATE_THEME" = true ]; then git submodule update --init; fi
-    - hugo
+    - hugo -D
 
 .deploy-site:
   stage: deploy
   script:
     - if [ "$UPDATE_THEME" = true ]; then git submodule update --init; fi
-    - hugo
+    - hugo $EXTRA_FLAGS
     - rsync -e "ssh -o StrictHostKeyChecking=no" -crtvz --delete ./public/ $SSH_USERNAME@$HOSTNAME:$SITE_PATH
 
 test:
@@ -37,6 +37,8 @@ test:
   extends: .test
   
 dev-deploy-site:
+  variables:
+    EXTRA_FLAGS: "-D"
   environment:
     name: Development
   rules:

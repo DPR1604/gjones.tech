@@ -247,7 +247,6 @@ theme = "DoIt"
     home = ["HTML", "RSS", "JSON"]
     page = ["HTML", "MarkDown"]
     section = ["HTML", "RSS"]
-    taxonomy = ["HTML", "RSS"]
 
 [taxonomy]
     author = "authors"
