@@ -9,9 +9,12 @@ jobs:
     - name: Checkout Actions Repository
       uses: actions/checkout@v4
 
-    - name: Run spell check on content
+    - name: Run spell check on content Directory
       uses: crate-ci/typos@master
       with:
-        files: 
-          - ./content/*.en.md
-          - ./content/posts/*/*/*/*.en.md
+        files: ./content/*.en.md
+
+    - name: Run spell check on posts
+      uses: crate-ci/typos@master
+      with:
+        files: ./content/posts/*/*/*/*.en.md
