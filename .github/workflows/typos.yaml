@@ -12,4 +12,6 @@ jobs:
     - name: Run spell check on content
       uses: crate-ci/typos@master
       with:
-        files: ./content/*.en.md
+        files: 
+          - ./content/*.en.md
+          - ./content/posts/*/*/*/*.en.md
