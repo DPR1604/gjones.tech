@@ -19,4 +19,4 @@ Well over the years little blogs like this one have been a source of inspiration
 100% code that I can share will be on my github (synced over from gitlab so I don't forget to update it) although as some of this blog will reference some stuff I've been working on professionally I won't be able to share some things.
 
 #### You have something wrong in your translation.
-I'm also using this blog to learn German by translating post and pages into german, please forgive any errors in the german versions of posts/pages and if you spot one help me learn by rasing an issue for the blog's git repo.
+I'm also using this blog to learn German by translating post and pages into german, please forgive any errors in the german versions of posts/pages and if you spot one help me learn by raising an issue for the blog's git repo.
