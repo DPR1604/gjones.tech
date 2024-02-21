@@ -11,7 +11,7 @@ jobs:
 
     - name: Check for posts with draft status
       run: |
-        if grep -r 'draft: true' ./content/
+        if grep -r -l 'draft: true' ./content/
         then
           echo "Found post/s with draft status"
           exit 1
