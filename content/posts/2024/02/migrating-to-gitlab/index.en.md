@@ -3,7 +3,7 @@ title: "Migrating to Github"
 subtitle: "Why I've decided to stop self-hosting git"
 date: 2024-02-20T17:10:53Z
 lastmod: 2024-02-20T17:30:53Z
-draft: false
+draft: true
 authors: ["Gareth Jones"]
 description: ""
 tags: ["self-hosting", "automation"]
