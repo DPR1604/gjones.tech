@@ -1,13 +1,20 @@
-name: Spell-check
+name: Pre merge checks
 on: [pull_request]
 
 jobs:
   run:
-    name: Run Spell check
+    name: Run Pre merge checks
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Actions Repository
       uses: actions/checkout@v4
+
+    - name: Check for posts with draft status
+      run: |
+        if grep -r -q 'draft: true' ./content/
+        then 
+          exit 1
+        fi
 
     - name: Run spell check on content Directory
       uses: crate-ci/typos@master
