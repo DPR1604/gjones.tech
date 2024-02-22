@@ -2,7 +2,7 @@ baseURL = "/"
 
 defaultContentLanguage = "en"
 languageCode = "en"
-title = "Gareth Jones"
+title = "Gaz Jones"
 
 theme = "DoIt"
 
@@ -51,7 +51,7 @@ theme = "DoIt"
         themeChangeMode = "select"
         [params.header.title]
             logo = ""
-            name = "Gareth Jones"
+            name = "Gaz Jones"
             pre = ""
             post = ""
             typeit = false
