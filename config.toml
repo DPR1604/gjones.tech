@@ -8,7 +8,7 @@ theme = "DoIt"
 
 [params]
     version = "0.4.0"
-    title = "Gareth Jones"
+    title = "Gaz Jones"
     description = "A DevOps and self-hosting focused blog"
     keywords = ["self-hosting", "DevOps"]
     defaultTheme = "auto"
@@ -87,7 +87,7 @@ theme = "DoIt"
         [params.home.profile]
             enable = true
             gravatarEmail = "garethjones1604@gmail.com"
-            title = "Gareth Jones"
+            title = "Gaz Jones"
             subtitle = "A DevOps and self-hosting focused blog"
             typeit = true
             social = true
@@ -217,7 +217,7 @@ theme = "DoIt"
         endLevel = 6
 
 [author]
-    name = "Gareth Jones"
+    name = "Gaz Jones"
     gravatarEmail = "garthjones1604@gmail.com"
 
 [sitemap]
@@ -257,7 +257,7 @@ theme = "DoIt"
 [languages]
   [language.en]
     weight = 1
-    title = "Gareth Jones"
+    title = "Gaz Jones"
     languageCode = "en"
     languageName = "english"
     [[languages.en.menu.main]]
