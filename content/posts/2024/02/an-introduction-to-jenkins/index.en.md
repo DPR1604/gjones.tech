@@ -9,9 +9,7 @@ description: "This post will be discussing the recent move to Jenkins"
 tags: ["self-hosting", "automation", "jenkins"]
 categories: ["self-hosting", "automation", "jenkins"]
 series: ["Jenkins-ci", "Migration to github"]
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 ---
 
 In this post I will be discussing my recent move to using Jenkins for CI CD pipelines, this is the first post in this series covering my process on migrating the pipelines from the pipelines but these posts are also part of the migrating to github series.

@@ -9,8 +9,7 @@ tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
 series: ["Hugo"]
 resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 ---
 
 Here it is the new hugo site, I was on the hunt for a new faster way to deliver my blog and I stumbled across hugo, hugo is a static site generator that's written in Go and utilizing markdown to write posts, essentially it works by writing your posts in markdown then you use hugo to generate static html files.

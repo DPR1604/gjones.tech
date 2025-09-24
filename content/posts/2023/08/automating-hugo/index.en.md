@@ -9,9 +9,7 @@ description: ""
 tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
 series: ["Hugo"]
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: ""
 ---
 
 In this post I'll be discussing how I have automated the deployment of hugo both to a development environment and production environment.
