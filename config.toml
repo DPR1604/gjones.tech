@@ -95,6 +95,7 @@ theme = "DoIt"
         [params.home.posts]
             enable = true
             paginate = 6
+	    imagePreview = true
     [params.social]
         GitHub = "DPR1604"
 
@@ -105,7 +106,7 @@ theme = "DoIt"
         lightgallery = false
         ruby = true
         fraction = true
-        fontawesome = true
+#        fontawesome = true
         linkToMarkdown = true
         linkToSource = false
         linkToEdit = false
@@ -216,10 +217,6 @@ theme = "DoIt"
         startLevel = 2
         endLevel = 6
 
-[author]
-    name = "Gaz Jones"
-    gravatarEmail = "garthjones1604@gmail.com"
-
 [sitemap]
     changefreq = "weekly"
     filename = "sitemap.xml"
@@ -229,7 +226,7 @@ theme = "DoIt"
     posts = ":year/:month/:filename"
 
 [privacy]
-    [privacy.twitter]
+    [privacy.x]
         enableDNT = true
     [privacy.youtube]
         privacyEnhanced = true
@@ -249,7 +246,7 @@ theme = "DoIt"
     section = ["HTML", "RSS"]
 
 [taxonomy]
-    author = "authors"
+    #author = "authors"
     category = "categories"
     tag = "tags"
     series = "series"
