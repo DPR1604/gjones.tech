@@ -4,14 +4,12 @@ subtitle: "Why I've decided to stop self-hosting git"
 date: 2024-02-20T17:10:53Z
 lastmod: 2024-02-20T17:30:53Z
 draft: false
-authors: ["Gareth Jones"]
+authors: [Gaz]
 description: ""
 tags: ["self-hosting", "automation"]
 categories: ["git", "self-hosting"]
 series: ["Migration to github"]
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 ---
 
 In this post I will discussing the reasons for my recent migration to github from gitlab and the initial process I took to move my repositories over to github this is a the first post in the series as I document the additional steps of using a mixture of github actions and Jenkins to build brand new pipelines with the devops knowledge I have built up.

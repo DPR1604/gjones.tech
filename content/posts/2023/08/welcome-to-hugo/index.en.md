@@ -4,13 +4,12 @@ description: "A quick post discussing hugo and why I've chosen it"
 date: 2023-08-25T14:02:57Z
 lastmod: 2023-08-29T11:26:06Z
 draft: false
-author: "Gareth Jones"
+authors: [Gaz]
 tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
 series: ["Hugo"]
 resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: "featured-image.png"
 ---
 
 Here it is the new hugo site, I was on the hunt for a new faster way to deliver my blog and I stumbled across hugo, hugo is a static site generator that's written in Go and utilizing markdown to write posts, essentially it works by writing your posts in markdown then you use hugo to generate static html files.

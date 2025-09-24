@@ -7,12 +7,13 @@ title = "Gaz Jones"
 theme = "DoIt"
 
 [params]
-    version = "0.4.0"
+    version = "0.4.2"
     title = "Gaz Jones"
     description = "A DevOps and self-hosting focused blog"
     keywords = ["self-hosting", "DevOps"]
     defaultTheme = "auto"
     gitRepo = "https://github.com/DPR1604/gjones.tech"
+    enableGitInfo = true
     dateFormat = "02-01-2006"
     enablePWA = false
     cacheRemoteImages = false
@@ -44,6 +45,11 @@ theme = "DoIt"
             ignoreLocation = false
             useExtendedSearch = false
             ignoreFieldNorm = false
+    [params.image]
+      # cache remote images for better optimisations
+      cacheRemote = true
+      # Image resizing and optimisation
+      optimise = true
 
     [params.header]
         desktopMode = "fixed"
@@ -95,6 +101,7 @@ theme = "DoIt"
         [params.home.posts]
             enable = true
             paginate = 6
+	    imagePreview = true
     [params.social]
         GitHub = "DPR1604"
 
@@ -105,7 +112,7 @@ theme = "DoIt"
         lightgallery = false
         ruby = true
         fraction = true
-        fontawesome = true
+#        fontawesome = true
         linkToMarkdown = true
         linkToSource = false
         linkToEdit = false
@@ -216,20 +223,16 @@ theme = "DoIt"
         startLevel = 2
         endLevel = 6
 
-[author]
-    name = "Gaz Jones"
-    gravatarEmail = "garthjones1604@gmail.com"
-
 [sitemap]
     changefreq = "weekly"
     filename = "sitemap.xml"
     priority = 0.5
     
 [Permalinks]
-    posts = ":year/:month/:filename"
+    posts = ":year/:month/:contentbasename"
 
 [privacy]
-    [privacy.twitter]
+    [privacy.x]
         enableDNT = true
     [privacy.youtube]
         privacyEnhanced = true
@@ -249,7 +252,7 @@ theme = "DoIt"
     section = ["HTML", "RSS"]
 
 [taxonomy]
-    author = "authors"
+    #author = "authors"
     category = "categories"
     tag = "tags"
     series = "series"

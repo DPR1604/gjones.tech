@@ -4,14 +4,12 @@ subtitle: "How I've automated the deployment of hugo and set up my environments"
 date: 2023-08-30T12:57:55Z
 lastmod: 2023-08-30T12:57:55Z
 draft: false
-authors: []
+authors: [Gaz]
 description: ""
 tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
 series: ["Hugo"]
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featuredImage: ""
 ---
 
 In this post I'll be discussing how I have automated the deployment of hugo both to a development environment and production environment.

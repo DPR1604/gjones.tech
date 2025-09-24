@@ -9,7 +9,5 @@ description: ""
 tags: []
 categories: []
 series: []
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
+featured-image: "featured-image.png"
 ---
