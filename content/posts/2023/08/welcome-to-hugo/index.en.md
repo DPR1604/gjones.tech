@@ -4,7 +4,7 @@ description: "A quick post discussing hugo and why I've chosen it"
 date: 2023-08-25T14:02:57Z
 lastmod: 2023-08-29T11:26:06Z
 draft: false
-author: "Gareth Jones"
+authors: [Gaz]
 tags: ["self-hosting", "hugo", "automation"]
 categories: ["Hugo"]
 series: ["Hugo"]

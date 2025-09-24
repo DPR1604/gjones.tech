@@ -4,7 +4,7 @@ subtitle: "The future of my CI and CD pipelines"
 date: 2024-02-27T18:30:23Z
 lastmod: 2024-02-27T18:30:23Z
 draft: false
-authors: ["Gaz Jones"]
+authors: [Gaz]
 description: "This post will be discussing the recent move to Jenkins"
 tags: ["self-hosting", "automation", "jenkins"]
 categories: ["self-hosting", "automation", "jenkins"]

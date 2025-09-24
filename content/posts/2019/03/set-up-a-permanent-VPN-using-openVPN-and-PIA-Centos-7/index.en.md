@@ -2,7 +2,7 @@
 title: "Set up a permanent VPN using openVPN and PIA Centos 7"
 date: 2019-03-17T14:02:57Z
 draft: false
-author: "Gareth Jones"
+authors: [Gaz]
 tags: ["self-hosting", "VPN", "openvpn", "CentOS 7"]
 code:
   copy: true

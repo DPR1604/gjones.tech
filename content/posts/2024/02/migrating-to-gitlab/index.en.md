@@ -4,7 +4,7 @@ subtitle: "Why I've decided to stop self-hosting git"
 date: 2024-02-20T17:10:53Z
 lastmod: 2024-02-20T17:30:53Z
 draft: false
-authors: ["Gareth Jones"]
+authors: [Gaz]
 description: ""
 tags: ["self-hosting", "automation"]
 categories: ["git", "self-hosting"]
