@@ -7,12 +7,13 @@ title = "Gaz Jones"
 theme = "DoIt"
 
 [params]
-    version = "0.4.0"
+    version = "0.4.2"
     title = "Gaz Jones"
     description = "A DevOps and self-hosting focused blog"
     keywords = ["self-hosting", "DevOps"]
     defaultTheme = "auto"
     gitRepo = "https://github.com/DPR1604/gjones.tech"
+    enableGitInfo = true
     dateFormat = "02-01-2006"
     enablePWA = false
     cacheRemoteImages = false
@@ -44,6 +45,11 @@ theme = "DoIt"
             ignoreLocation = false
             useExtendedSearch = false
             ignoreFieldNorm = false
+    [params.image]
+      # cache remote images for better optimisations
+      cacheRemote = true
+      # Image resizing and optimisation
+      optimise = true
 
     [params.header]
         desktopMode = "fixed"
