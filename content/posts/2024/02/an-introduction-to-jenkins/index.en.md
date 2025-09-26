@@ -1,8 +1,8 @@
 ---
 title: "An Introduction to Jenkins"
 subtitle: "The future of my CI and CD pipelines"
-#date: 2024-02-27T18:30:23Z
-#lastmod: 2024-02-27T18:30:23Z
+date: 2024-02-27T18:30:23Z
+lastmod: 2024-02-27T18:30:23Z
 draft: false
 authors: [Gaz]
 description: "This post will be discussing the recent move to Jenkins"
