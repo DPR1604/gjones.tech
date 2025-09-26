@@ -28,4 +28,4 @@ I run Jenkins natively on Alma Linux 8 I used the official documentation as a gu
 
 I have most of the common plugins from common setup, I'll discuss the plugins I use in more details in future posts.
 
-This post is only the beginning on my adventure into Jenkins I will be keeping up with documenting the process as I go through it.
+This post is only the beginning on my adventure into Jenkins I will be keeping up with documenting the process as I go through it. test change

@@ -3,7 +3,7 @@ baseURL = "/"
 defaultContentLanguage = "en"
 languageCode = "en"
 title = "Gaz Jones"
-
+enablegitinfo = true
 theme = "DoIt"
 
 [params]
@@ -13,7 +13,6 @@ theme = "DoIt"
     keywords = ["self-hosting", "DevOps"]
     defaultTheme = "auto"
     gitRepo = "https://github.com/DPR1604/gjones.tech"
-    enableGitInfo = true
     dateFormat = "02-01-2006"
     enablePWA = false
     license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
@@ -251,7 +250,7 @@ theme = "DoIt"
     section = ["HTML", "RSS"]
 
 [taxonomy]
-    #author = "authors"
+    author = "authors"
     category = "categories"
     tag = "tags"
     series = "series"
@@ -306,3 +305,9 @@ theme = "DoIt"
       name = "About me"
       url = "/about/"
       title = ""
+
+[frontmatter]
+  date = ['date', 'publishdate', 'pubdate', 'published', 'lastmod', 'modified']
+  expiryDate = ['expirydate', 'unpublishdate']
+  lastmod = [':git', 'lastmod', 'modified', 'date', 'publishdate', 'pubdate', 'published']
+  publishDate = ['publishdate', 'pubdate', 'published', 'date']
