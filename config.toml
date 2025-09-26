@@ -306,3 +306,9 @@ theme = "DoIt"
       name = "About me"
       url = "/about/"
       title = ""
+
+[frontmatter]
+  date = ["date", "lastmod"]
+  lastmod = [":git", "lastmod", "date"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
