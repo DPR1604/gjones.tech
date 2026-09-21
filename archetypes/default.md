@@ -9,5 +9,5 @@ description: ""
 tags: []
 categories: []
 series: []
-featured-image: "featured-image.png"
+featuredImage: "featured-image.png"
 ---
