@@ -16,7 +16,7 @@ In this post I will be discussing my recent move to using Jenkins for CI CD pipe
 
 ### Why?
 
-So why Jenkins? Well simply put I wanted to know how it works better, Jenkins is one of the tools I have used professtionally a few times however each time I have another team has managed the environment, this has restricted a number of feature I've been exposed to, this fact has made it difficult to suggest improvements as I don't know what is possible.
+So why Jenkins? Well simply put I wanted to know how it works better, Jenkins is one of the tools I have used professionally a few times however each time I have another team has managed the environment, this has restricted a number of feature I've been exposed to, this fact has made it difficult to suggest improvements as I don't know what is possible.
 
 ### The Setup
 
