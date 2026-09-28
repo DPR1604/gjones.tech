@@ -6,6 +6,10 @@ jobs:
     name: Run Pre merge checks
     runs-on: ubuntu-latest
     steps:
+
+    - name: Install dependancies
+      run: apt install -y npm && npm install cspell
+
     - name: Checkout Actions Repository
       uses: actions/checkout@v4
 
@@ -17,12 +21,6 @@ jobs:
           exit 1
         fi
 
-    - name: Run spell check on content Directory
-      uses: crate-ci/typos@master
-      with:
-        files: ./content/*.en.md
-
-    - name: Run spell check on posts
-      uses: crate-ci/typos@master
-      with:
-        files: ./content/posts/*/*/*/*.en.md
+    - name: Spell check site contents
+      run: npx cspell content/**/*.en.md
+    
