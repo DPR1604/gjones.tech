@@ -13,7 +13,7 @@ jobs:
     steps:
 
     - name: Install dependancies
-      run: apt install -y npm && npm install cspell
+      run: sudo apt install -y npm && npm install cspell
 
     - name: Checkout Actions Repository
       uses: actions/checkout@v4
