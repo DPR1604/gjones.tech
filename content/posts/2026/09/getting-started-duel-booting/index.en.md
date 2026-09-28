@@ -8,7 +8,7 @@ authors: [Gaz]
 description: "Intro the the duel booting series of posts."
 tags: ["duel-booting"]
 categories: []
-series: ["Duel-booting-adventures"]
+series: ["duel-booting-adventures"]
 featuredImage: "featured-image.png"
 ---
 
